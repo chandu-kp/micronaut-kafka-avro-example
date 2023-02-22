@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: Kafka Producer App
+  server:
+    port: 8080
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  producers:
+    default:
+      key.serializer: org.apache.kafka.common.serialization.StringSerializer
+      value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      schema.registry.url: http://localhost:8085
+    company-client:
+      key.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      schema.registry.url: http://localhost:8085

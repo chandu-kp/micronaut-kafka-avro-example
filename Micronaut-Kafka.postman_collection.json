@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "6246d4a5-a8d3-4364-8238-8baa3b553ef4",
+		"name": "Micronaut Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phoneNumber\":\"614010101\",\n    \"name\": \"Bob\",\n    \"city\": \"NY\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Company",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phoneNumber\":\"614010101\",\n    \"name\": \"Github\",\n    \"city\": \"San Francisco\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/company",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

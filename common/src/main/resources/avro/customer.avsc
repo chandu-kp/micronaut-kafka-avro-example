@@ -1,0 +1,25 @@
+{
+  "namespace": "com.demo.kafka.model.schema",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "phone_number",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "city",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  ]
+}
